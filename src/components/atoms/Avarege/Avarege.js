@@ -1,10 +1,13 @@
 import React from 'react';
 import {  Wrapper } from './Avarege.styles'
 
-const Avarege = ({userData}) => {
+const Avarege = ({ userData}) => {
+
+const value = userData.average;
+
  return (
-  <Wrapper>
-    <div>{userData.average}</div>
+  <Wrapper value={value}>
+  <div>{userData.average}</div>
   </Wrapper>
  )
 };

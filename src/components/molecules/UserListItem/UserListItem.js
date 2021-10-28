@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper, StyledInfo } from './UserListItem.styles';
 
-import Button from 'components/atoms/Button/Button';
+import DeleteButton from 'components/atoms/DeleteButton/DeleteButton';
 import Avarege from 'components/atoms/Avarege/Avarege';
 
 const UserListItem = ({deleteUser, userData}) => {
@@ -15,7 +15,7 @@ const UserListItem = ({deleteUser, userData}) => {
         <p>attendence {userData.attendance}</p>
       </StyledInfo>
       </div>
-      <Button onClick={()=>deleteUser(userData.name)}/>
+      <DeleteButton onClick={()=>deleteUser(userData.name)}/>
     </Wrapper>
   )
 };
